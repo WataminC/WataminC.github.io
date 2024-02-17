@@ -1,4 +1,4 @@
-import{_ as p}from"./plugin-vue_export-helper-DlAUqK2U.js";import{o as t,c as e,e as a,a as n,f as s}from"./app-CXmrEiks.js";const o={},c=a(`<p><strong>树的基本术语</strong></p><ul><li>1.根</li><li>2.孩子、双亲和兄弟 、祖先、子孙</li><li>3.分支结点和叶子结点</li><li>4.结点的度和树的度</li><li>5.结点的层数和树的深度</li><li>6.路径和路径长度</li><li>7.有序树和无序树</li><li>8.森林</li></ul><div class="language-text line-numbers-mode" data-ext="text" data-title="text"><pre class="language-text"><code>树的操作（实际生活的抽象）
+import{_ as p}from"./plugin-vue_export-helper-DlAUqK2U.js";import{o as t,c as e,e as a,a as n,f as s}from"./app-B7jYBfBs.js";const o={},c=a(`<p><strong>树的基本术语</strong></p><ul><li>1.根</li><li>2.孩子、双亲和兄弟 、祖先、子孙</li><li>3.分支结点和叶子结点</li><li>4.结点的度和树的度</li><li>5.结点的层数和树的深度</li><li>6.路径和路径长度</li><li>7.有序树和无序树</li><li>8.森林</li></ul><div class="language-text line-numbers-mode" data-ext="text" data-title="text"><pre class="language-text"><code>树的操作（实际生活的抽象）
 （1）求根操作 Root(x)
 求出当前树中结点x的根结点；
 （2）求双亲操作 Parent(x) 求出当前树中结点x的双亲结点；

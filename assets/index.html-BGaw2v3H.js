@@ -1,4 +1,4 @@
-import{_ as e}from"./plugin-vue_export-helper-DlAUqK2U.js";import{o as t,c as o,b as n}from"./app-CXmrEiks.js";const r={};function a(i,m){return t(),o("div",null,[n(` ::: center
+import{_ as e}from"./plugin-vue_export-helper-DlAUqK2U.js";import{o as t,c as o,b as n}from"./app-B7jYBfBs.js";const r={};function a(i,m){return t(),o("div",null,[n(` ::: center
 
 <footer class="footer">Copyright © 2024-{{ new Date().getFullYear() }} Watamin C
 </footer>
