@@ -251,15 +251,19 @@ styles中包含三个文件，其中config.scss和palette.scss文件用于配置
 
 [部署项目](https://theme-hope.vuejs.press/zh/get-started/deploy.html)是通过将项目推送到Github，借助Github Actions和Github Pages实现在公网查看网页。
 
-1. 在Github上创建一个<username>.github.io的公开仓库
+1. 在Github上创建一个"username.github.io"的公开仓库
 
 2. 根据Github空白仓库上面的指令将项目推送至Github
 
 3. 在仓库的settings中的pages页面，在Build and deployment下将Branch改为gh-pages(main分支之外的那一个)
 
-4. 访问https://<username>.github.io
+4. 访问"https://username.github.io"
 
 5. 之后在本地修改测试无误后再用相同方法推送到Github上，项目会自动更新
+
+:::caution
+将username改为你的用户名
+:::
 
 ## 总结
 
@@ -299,4 +303,4 @@ background: rgba(253, 230, 138, 0.15)
 
 ![picture](/assets/images/cover2.jpg)
 
-[emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet)
+- [emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet)
