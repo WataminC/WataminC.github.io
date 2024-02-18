@@ -265,6 +265,12 @@ styles中包含三个文件，其中config.scss和palette.scss文件用于配置
 将username改为你的用户名
 :::
 
+## CDN加速
+
+由于Github访问经常会抽风，最好买个域名用cloudflare加速一下，起码能保证大多数时候的稳定访问，[使用cloudflare免费加速github page](https://monkeywie.cn/2020/08/20/fast-github-page-with-cloudflare/)
+
+值得一提的是，如果使用不是根域名，Github可能无法自动下发证书，域名解析的时候要选择CNAME类型，然后解析到自己原先的"username.github.io"下，可以看看[官方](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https)是怎么说的
+
 ## 总结
 
 整个文章写起来还是比我想象中的要难很多，原先想写一个非常完整，跟着走下来能完美建站的攻略，但是实际写起来发现这可能会比写出现在这样一篇文章花多得多的时间。以目前截止，我也没停地打了三个小时才搞定这篇文，希望今后熟能生巧吧！
@@ -297,7 +303,10 @@ link: https://mister-hope.com
 background: rgba(253, 230, 138, 0.15)
 ```
 
-<Share :services="['qq','weibo']" />
+<Share />
+
+<Share colorful />
+
 
 <BiliBili bvid="BV1BS4y1N7PH" />
 
