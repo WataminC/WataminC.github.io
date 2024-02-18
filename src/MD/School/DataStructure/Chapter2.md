@@ -1,5 +1,7 @@
 ---
 title: 第2章 线性表
+category: CS
+tag: DataStructure
 ---
 # $\S$ 第二章：线性表
 

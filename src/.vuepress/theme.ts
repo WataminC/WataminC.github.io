@@ -4,16 +4,17 @@ import sidebar from "./sidebar.ts";
 import { MR_HOPE_AVATAR } from "./logo.ts";
 
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
+  hostname: "https://wataminc.github.io",
 
   author: {
     name: "Watamin C",
-    // url: "https://mister-hope.com",
+    url: "https://wataminc.github.io",
   },
 
-  iconAssets: "fontawesome-with-brands",
+  // iconAssets: "fontawesome-with-brands",
+  iconAssets: "fontawesome",
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "/assets/images/1749_1708228472_hd.jpeg",
 
   repo: "https://github.com/WataminC",
 
@@ -25,6 +26,7 @@ export default hopeTheme({
   // 侧边栏
   sidebar,
 
+  // 允许打印键出现
   print: true,
 
   fullscreen: false,
@@ -38,8 +40,10 @@ export default hopeTheme({
 
   darkmode: "toggle",
 
+  // 不显示路径
   breadcrumb: false,
 
+  // 不要显示tag和category等信息
   pageInfo: false,
 
   // 博客相关
@@ -85,12 +89,12 @@ export default hopeTheme({
   //   articlePerPage: 5,
   // },
 
-  // 加密配置
-  encrypt: {
-    config: {
-      "/demo/encrypt.html": ["1234"],
-    },
-  },
+  // // 加密配置
+  // encrypt: {
+  //   config: {
+  //     "/demo/encrypt.html": ["1234"],
+  //   },
+  // },
 
   // 多语言配置
   metaLocales: {
@@ -105,7 +109,7 @@ export default hopeTheme({
     blog: true,
     
     prismjs: {
-      light: "ateliersulphurpool-light",
+      light: "one-light",
       dark: "atom-dark",
     },
 
@@ -117,7 +121,7 @@ export default hopeTheme({
     // },
 
     components: {
-      components: ["Badge", "VPCard"],
+      components: ["Badge", "VPCard", "Share", "BiliBili"],
     },
 
     backToTop: true,
