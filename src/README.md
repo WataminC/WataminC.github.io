@@ -4,6 +4,8 @@ home: true
 icon: home
 title: 主页
 heroImage: /assets/images/1749_1708228472_hd.jpeg
+image: /assets/images/1749_1708228472_hd.jpeg
+description: Watamin C的个人主页
 heroText: Watamin C
 # heroFullScreen: false
 # tagline: 

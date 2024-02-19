@@ -107,6 +107,8 @@ export default hopeTheme({
   // 在这里配置主题提供的插件
   plugins: {
     blog: true,
+
+    seo: true,
     
     prismjs: {
       light: "one-light",
