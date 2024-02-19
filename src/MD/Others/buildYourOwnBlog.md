@@ -8,16 +8,16 @@ author: WataminC
 
 # 开始的契机
 
-近期在学习6.s081，因为经常需要研读xv6源码，想把自己的学习过程记录下来但是本地的Markdown不足以满足我的需求和分享欲，于是打算搭建一个网站来放些自己的笔记，顺便用来督促一下自己在学习的过程中多记笔记，不然真是学啥忘啥！
+近期在学习6.s081，因为经常需要研读xv6源码，想把自己的学习过程记录下来但是本地的Markdown不足以满足我的需求，于是打算搭建一个网站来放些自己的笔记，顺便用来督促一下自己在学习的过程中多记笔记，不然真是学啥忘啥！
 
 ## 选用的技术栈
 
-因为建站的目的是为了放笔记和做笔记而不是作为一个前后端学习的项目，我希望前端部分能尽可能的简单和模块化，同时网站还需要有一定的Markdown增强功能，所以我在Vuepress和Hexo之中选择了[Vuepress](https://vuepress.vuejs.org/)并且使用了[Vuepress theme hope](https://theme-hope.vuejs.press/)这一主题
+因为建站的目的是为了放笔记和做笔记而不是作为一个前后端学习的项目，所以我希望前端部分能尽可能的简单和模块化，同时网站还需要有一定的Markdown增强功能，因此我在Vuepress和Hexo之中选择了[Vuepress](https://vuepress.vuejs.org/)并且使用了[Vuepress theme hope](https://theme-hope.vuejs.press/)这一主题
 
 - Vuepress基于Vue和Vite方便后期拓展
 - Vuepress theme hope这一主题提前集成了大量插件，可按需配置
 
-简单来说，Vuepress是个基于Vue的静态网页生成器(Vue-powered Static Site Generator)，可以将你的Markdown文件渲染成静态的HTML文件。在整个网站搭建的过程中，可以用过配置的方式，获得自己想要的网站，从而方便创作者专注于文档的写作。同时Vuepress还支持高度的自定义，方便创作者后期的拓展。
+简单来说，Vuepress是个基于Vue的静态网页生成器(Vue-powered Static Site Generator)，可以将你的Markdown文件渲染成静态的HTML文件。在整个网站搭建的过程中，可以通过配置的方式，获得自己想要的网站，从而方便创作者专注于文档的写作。同时Vuepress还支持高度的自定义，方便创作者后期的拓展。
 
 ## 前期准备
 
@@ -84,7 +84,7 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 :::
 
 ```sh
-sudo snap refresh node --channel=18
+sudo snap install node --classic --channel=18
 ```
 
 ## 网站搭建
@@ -130,7 +130,7 @@ pnpm run docs:dev
 Vuepress是一个以配置为主的网站构建工具，也就是说主体的逻辑和内容以及提前给出，我们需要关心的是“要不要，要多少，要什么”的问题。换言之，我们只需要修改文件中作者提前给出的数据大小，true还是false，各个部分的名称，就能个性化的定制我们的网站，所以搞清楚整个项目的架构，搞清楚“哪个文件是负责那块部分”，就能快速解决“我修改这个会有什么区别，我想把网站哪个部分改成什么样我应该如何做”的问题！
 
 :::important
-Vuepress中有一个重要的概念[Frontmatter](https://v2.vuepress.vuejs.org/guide/page.html#frontmatter)，可以根据每个Markdown文件最上方的YAML部分配置对于的网页
+Vuepress中有一个重要的概念[Frontmatter](https://v2.vuepress.vuejs.org/guide/page.html#frontmatter)，可以根据每个Markdown文件最上方的YAML部分配置对应的网页
 :::
 
 ```
@@ -272,6 +272,10 @@ styles中包含三个文件，其中config.scss和palette.scss文件用于配置
 值得一提的是，如果使用不是根域名，Github可能无法自动下发证书，域名解析的时候要选择CNAME类型，然后解析到自己原先的"username.github.io"下，可以看看[官方](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https)是怎么说的
 
 还有一个坑，在dns生效后访问网站有可能会收到重定向次数过多的错误，需要在Cloudflare中将[SSL/TLS的加密模式改为完全或完全(严格)](https://dash.cloudflare.com/ecd571cc57b50805ee363f8851bda8f1/wataminc.top/ssl-tls)才能解决
+
+## SEO
+
+主要是通过[Open Graph Protocol](https://ogp.me/)让网站在分享出去的时候可以更加美观，主题已经提前预设好了[默认的配置](https://theme-hope.vuejs.press/guide/advanced/seo.html)，要开启后按需填写自己需要的部分就好。
 
 ## 总结
 
