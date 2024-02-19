@@ -210,7 +210,7 @@ Vuepress中有一个重要的概念[Frontmatter](https://v2.vuepress.vuejs.org/g
 public文件夹中存储的网站的静态资源，比如网站的logo，文章中的图片
 
 ::: warning
-在Markdown引用本地资源的时候，根目录将变成public文件夹，但我还没找到具体指出这一事实的文档部分
+在Markdown如果需要引用，assets文件夹下的资源，直接以"/assets/..."开始即可。因为build后的文件结构会发生改变，assets文件夹将会直接放在根目录下，可以参考部署在Github上的[分支](https://github.com/WataminC/WataminC.github.io/tree/gh-pages)
 :::
 
 styles中包含三个文件，其中config.scss和palette.scss文件用于配置该主题提前给出的样式风格。而在index.scss中可以通过css自己修改网站的样式
@@ -275,7 +275,7 @@ styles中包含三个文件，其中config.scss和palette.scss文件用于配置
 
 ## SEO
 
-主要是通过[Open Graph Protocol](https://ogp.me/)让网站在分享出去的时候可以更加美观，主题已经提前预设好了[默认的配置](https://theme-hope.vuejs.press/guide/advanced/seo.html)，要开启后按需填写自己需要的部分就好。
+主要是通过[Open Graph Protocol](https://ogp.me/)让网站在分享出去的时候可以更加美观，主题已经提前预设好了[默认的配置](https://theme-hope.vuejs.press/guide/advanced/seo.html)，开启后按需填写自己需要的部分就好。
 
 ## 总结
 
@@ -319,3 +319,4 @@ background: rgba(253, 230, 138, 0.15)
 ![picture](/assets/images/1749_1708228472_tiny.jpg)
 
 - [emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet)
+- [Flowchart](https://theme-hope.vuejs.press/guide/markdown/flowchart.html)
