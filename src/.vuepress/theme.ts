@@ -4,11 +4,11 @@ import sidebar from "./sidebar.ts";
 import { MR_HOPE_AVATAR } from "./logo.ts";
 
 export default hopeTheme({
-  hostname: "https://wataminc.github.io",
+  hostname: "www.wataminc.top",
 
   author: {
     name: "Watamin C",
-    url: "https://wataminc.github.io",
+    url: "www.wataminc.top",
   },
 
   // iconAssets: "fontawesome-with-brands",
