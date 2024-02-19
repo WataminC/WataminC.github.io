@@ -3,8 +3,8 @@ home: true
 # layout: BlogHome
 icon: home
 title: 主页
-heroImage: /assets/images/1749_1708228472_hd.jpeg
-image: /.vuepress/public/assets/images/1749_1708228472_hd.jpeg
+heroImage: /assets/images/1749_1708228472_tiny.jpg
+image: /assets/images/1749_1708228472_tiny.jpg
 description: Watamin C的个人主页
 heroText: Watamin C
 # heroFullScreen: false

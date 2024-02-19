@@ -2,7 +2,6 @@
 title: 零成本创建一个属于自己的个人网站
 category: 技术分享
 author: WataminC
-image: /.vuepress/public/assets/images/1749_1708228472_hd.jpeg
 ---
 
 本文基于20.04.1版本的Ubuntu环境写作，部分代码可能与Windows系统下有出入，理论上无需其他编程前置知识,但可能需要你对Markdown有一定的了解，不过现学完全来的及！但后续网站改动可能需要一定的动手能力。同时本文仅作整理，只给出必要的内容，更多详细信息可以参考官方的文档，链接均在文章中给出，若有实质性偏差和错误，欢迎友好交流，提Issues！
@@ -313,6 +312,6 @@ background: rgba(253, 230, 138, 0.15)
 
 <BiliBili bvid="BV1BS4y1N7PH" />
 
-![picture](/assets/images/cover2.jpg)
+![picture](/assets/images/1749_1708228472_tiny.jpg)
 
 - [emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet)
