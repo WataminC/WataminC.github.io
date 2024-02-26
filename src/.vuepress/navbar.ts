@@ -20,6 +20,11 @@ export default navbar([
         link: "DataStructure/",
       },
       {
+        text: "数据库系统",
+        icon: "database",
+        link: "DatabaseSystem/",
+      },
+      {
         text: "其他",
         icon: "bars",
         link: "Others/",
