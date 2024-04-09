@@ -66,4 +66,5 @@ docker restart opengauss
 ### Reference
 
 [开启和关闭数据库](https://docs-opengauss.osinfra.cn/en/docs/1.0.1/docs/Administratorguide/starting-and-stopping-opengauss.html)
+
 [官方文档](https://docs-opengauss.osinfra.cn/en/docs/3.0.0/docs/BriefTutorial/BriefTutorial.html)
