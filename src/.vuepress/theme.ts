@@ -158,6 +158,7 @@ export default hopeTheme({
       tabs: true,
       vPre: true,
       hint: true,
+      tasklist: true,
 
       // 在启用之前安装 chart.js
       // chart: true,
