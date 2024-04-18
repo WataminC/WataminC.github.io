@@ -49,3 +49,28 @@ $$c \leftarrow Enc_k(m)$$
 - Dec(decyption algorithm): take key k and cipher text c as input; ouput m.
 
 $$m := Dek_k(c)$$
+
+```
+K (key space) - set of all possible keys
+C (ciphertext space) - set of all possible ciphertexts
+```
+
+### Perfect secrecy(formal)
+
+Encryption scheme (Gen, Enc, Dec) with message space M and ciphertext space C is perfectly secret if for every distribution over M, every $m \in M$, and every $c \in C$ with $Pr[C=c] > 0$, it holds that
+
+$$Pr[M = m | C = c] = Pr[M = m]$$
+
+## One-time pad
+
+- $M = \{0, 1\}^n$
+- Gen: choose a uniform key $k \in \{0, 1\}^n$
+- $Enc_k(m) = k \oplus m$ (bit-wise XOR)
+- $Dec_k(c) = k \oplus c$
+
+> Correctness:
+> $Dec_k(Enc_k(m)) = k \oplus (k \oplus m) = m$
+
+### Perfect secrecy of one-time pad
+
+Fix arbitrary distribution over $M = \{0, 1\}^n$, and arbitray $m, c \in \{0, 1\}^n$
