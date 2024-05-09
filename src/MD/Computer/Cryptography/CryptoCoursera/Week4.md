@@ -162,3 +162,45 @@ twice the length of block cipher keys
   - Supports 224, 256, 384, and 512-bit outputs
 
 # HMAC
+
+## Hash-and-Mac
+
+![Hash-and-Mac](/assets/images/HashMac.png)
+
+## Security
+
+If the MAC is secure for fixed-length messages, and H is collision-resistant, then the previous construction is a secure MAC for arbitrary-length messages
+
+## Drawback
+
+- Hash function + block cipher-based MAC
+  - Block length mismatch
+  - Need to implement two crypto primitives
+
+# Authenticated Encryption
+
+## Encrypt then authenticate
+
+![](/assets/images/enThenAuth.png)
+
+## Security
+
+- If the encryption scheme is CPA-secure and the MAC is secure then:
+  - The combination is CPA-secure
+  - The combination is "secure MAC"
+
+- The combination achieves something stronger:
+  - Given ciphertexts corresponding to (chosen) plaintexts $m_1, \cdots, m_k$, it is infeasible for an attacker to generate any new, valid ciphertext!
+- Authenticated encryption scheme
+  - Infeasible to generate any new, valid ciphertexts
+
+:::important 
+In combination with CPA-security, this implies CCA-security
+:::
+
+:::warning
+- The encrypt-then-authenticate approach (with independent keys) is a sound way to construct an authenticated encryption scheme
+- Other, more efficient constructions have been proposed and are an active area of research and standardization
+:::
+
+# Secure Communication Sessions
