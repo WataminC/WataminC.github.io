@@ -1,5 +1,5 @@
 ---
-title: 第三周(群论)
+title: 第三章(群论)
 ---
 
 :::tip 目录
@@ -258,9 +258,62 @@ Let $G$ be a group and $H$ a subgroup of $G$, $\forall g_1, g_2 \in G$, then $g_
 
 Proof:
 
-If $g_1H \cap g_2H \neq \empty$, then $g_1H = g_2H$
+$\forall g_1, g_2 \in G$:
+
+- If $g_1H \cap g_2H \neq \empty$, then $g_1H = g_2H$
 
 Since $g_1H \cap g_2H \neq \empty$, $\exist h_1, h_2 \in H, g_1h_1 = g_2h_2$
 
-- $\forall g_1h \in g_1H, g_1h = g$
+1. $\forall g_1h \in g_1H, g_1h = g_1(h_1h_1^{-1})h = (g_1h_1)h_1^{-1}h = g_2(h_2h_1^{-1}h) \in g_2H$
+
+$$g_1H \subset g_2H$$
+
+2. $\forall g_2h \in g_2H, g_2h = g_2(h_2h_2^{-1})h = (g_2h_2)h_2^{-1}h = g_1(h_1h_2^{-1}h) \in g_1H$
+
+$$g_2H \subset g_1H$$
+
+Therefore, $g_1H = g_2H$
+
+- $g_1H \cap g_2H$
 :::
+
+### Partition
+
+:::tip Theorem
+Let $G$ be a group and $H$ is subgroup of $G$. Then the left cosets of $H$ in $G$ partition $G$.
+:::
+
+## Lagrange's Theorem
+
+### Notation
+
+:::important Notation
+Let $G$ be a finite group and $H$ a subgroup of $G$. Define the index of $H$ in $G$ to be the number of left cosets of $H$ in $G$. We denote the index by $[G:H]$
+:::
+
+### Lagrange's Theorem
+
+Let $G$ be a finite group and $H$ a subgroup of $G$. Then $|G| / |H| = [G:H]$ is the number of distinct left cosets of $H$ in $G$
+
+:::tip Proof
+The group $G$ is partitioned in $[G:H]$ distinct left cosets. Each left coset has $|H|$ elements; therefore, $|G| = |H|[G:H]$
+:::
+
+:::tip Corollary
+- Suppose that $G$ is a finite group and $g \in G$. Then the order of g must divide $|G|$
+
+- Let $G$ be a group and $|G| = p$ where p is prime. Then $G$ is cyclic and any $g \in G$ such that $g \neq e$ is a generator.
+
+- Let $H$ and $K$ be subgroups of a finite group $G$ such that $K \subset H \subset G$. Then
+
+$$[G:K] = [G:H][H:K]$$
+:::
+
+### Abstract Fermat's Little Theorem 
+
+Let $G$ be a finite group with order $n$. Then for any $a \in G$, $a^n = e$
+
+- Fermat's Little Theorem - $Z^*_p$
+  - $a^{p-1} \equiv 1 \pmod{p}$
+- Euler's Theorem - $Z^*_n$
+  - $a^{\phi(n)} \equiv 1 \pmod{n}$

@@ -174,17 +174,21 @@ Cancel the big number, we have:
 $$a^{p-1} \equiv 1 \pmod{p}$$
 :::
 
-:::tip Theorem
-(Fermat's little theorem) Let p be a prime number, and let a be any number with $a \neq 0 \pmod{p}$. Then
+:::tip Fermat's little theorem
+Let p be a prime number, and let a be any number with $a \neq 0 \pmod{p}$. Then
 
 $a^{p-1} \equiv 1 \pmod{p}$
 :::
 
 # Euler's Theorem
 
+:::tip Euler's Theorem
+If n is a **positive** integer and a, n are **coprime**, then $a^{\phi(n)} \equiv 1 \pmod{n}$ where $\phi(n)$ is the Euler's totient function.
+:::
+
 Next we would conjecture: Let n be a composite number, denotes 
 
-$$S = \{b : 1 \leq b < n and gcd(b, n) = 1\}$$
+$$S = \{b : 1 \leq b < n \text{ and } gcd(b, n) = 1\}$$
 
 Then $\forall a$ with gcd(a, n) = 1, denotes
 
@@ -246,7 +250,7 @@ $$a^{\phi(n)} \equiv 1 \pmod{n}$$
 
 Define:
 
-$$\phi(n) = | \{ b : 1 \leq b < n and gcd(b, c) = 1 \} |$$
+$$\phi(n) = | \{ b : 1 \leq b < n \text{ and } gcd(b, c) = 1 \} |$$
 
 The function $\phi$ is called Euler's phi function
 
