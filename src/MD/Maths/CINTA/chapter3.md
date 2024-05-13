@@ -40,7 +40,7 @@ Let p be a prime number, $Z^*_p = \{1, 2, \cdots, p-1\}$ forms a group under the
 
 - $Z_n^*$ (the order of $Z_n^*$ group is **n-1**)
 
-Let n be an integer, $Z^*_n = \{a \in [1 \cdots n-1] \text{and} gcd(a, n) = 1\}$ forms a group under the operation of multiplication. 
+Let n be an integer, $Z^*_n = \{a \in [1 \cdots n-1] \text{ and } gcd(a, n) = 1\}$ forms a group under the operation of multiplication. 
 :::
 
 # Basic Properties of Group
@@ -314,6 +314,6 @@ $$[G:K] = [G:H][H:K]$$
 Let $G$ be a finite group with order $n$. Then for any $a \in G$, $a^n = e$
 
 - Fermat's Little Theorem - $Z^*_p$
-  - $a^{p-1} \equiv 1 \pmod{p}$
-- Euler's Theorem - $Z^*_n$
-  - $a^{\phi(n)} \equiv 1 \pmod{n}$
+  - $a^{p-1} = e$
+- Euler's Theorem - $(Z/nZ)^*$
+  - $a^{\phi(n)} = e$

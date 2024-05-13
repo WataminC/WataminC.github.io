@@ -210,7 +210,7 @@ Then:
 
 $$S = \{b_1, b_2, \cdots, b_{\phi(n)} : 1 \leq b_i < n \text{, and } gcd(b_i, n) = 1\}$$
 
-$$S^\prime = \{a*b_1, a*b_2, \cdots, a*b_{\phi(n)} \pmod{n} : b_i \in S and gcd(a, n) = 1\}$$
+$$S^\prime = \{a*b_1, a*b_2, \cdots, a*b_{\phi(n)} \pmod{n} : b_i \in S \text{ and } gcd(a, n) = 1\}$$
 
 :::important Proof
 To prove 
