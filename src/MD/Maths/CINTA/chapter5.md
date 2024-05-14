@@ -4,6 +4,37 @@ title: 同余方程
 
 # 中国剩余定理
 
+:::important 中国剩余定理
+设$p$和$q$是互素的两个正整数，$n = pq$。对任意的$a \in Z_p$和$b \in Z_p$, 存在唯一解x，$0 \leq x < n$使得:
+
+$$x \equiv a \pmod{p}$$
+$$x \equiv b \pmod{q}$$
+
+该方程组的解为
+
+$$x \equiv aqq^{-1} + bpp^{-1}$$
+:::
+
+:::tip 中国剩余定理推广版
+设$m_0, m_1, \cdots, m_{n-1}$是两两互素的整数，对以下n个同余式的同余方程组
+
+$$x \equiv a_0 \pmod{m_0}$$
+$$\vdots$$
+$$x \equiv a_{n-1} \pmod{m_{n-1}}$$
+
+令$M = \prod_{i=0}^{n-1}m_i$, 记$b_i = M/m_i$,则
+
+$$x = \sum_{i=0}^{n-1} a_ib_ib_i^{-1} \pmod{M}$$
+:::
+
+:::tip 中国剩余定理的代数版本
+设$n=pq, p > 1 \text{ 和 } q > 1$是两个互素的正整数。则
+
+$$Z_n \cong Z_p \times Z_q$$
+
+$$Z^*_n \cong Z^*_p \times Z^*_q$$
+:::
+
 # 二次剩余
 
 ## Some easy conclusions
