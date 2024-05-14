@@ -60,3 +60,87 @@ The process proving $\phi$ is a isomorphism is similar to the above way.
 
 If $\mathbb{G}$ is a cyclic group of order p where p is a prime, then $\mathbb{G}$ is isomorphic to $\mathbb{Z}_p$
 :::
+
+:::important Theorem
+The isomorphism of groups determines equivalence relation of the class of all groups
+
+(Cayley) Every group is isomorphic to a group of permutations
+:::
+
+# Homomorphisms
+
+## Definition 
+
+Two group $(\mathbb{G}, \cdot)$ and $(\mathbb{H}, \odot)$ are homomorphic if there exists a map $\phi: \mathbb{G} \rightarrow \mathbb{H}$ such  that the group operation is preserved; that is
+
+$$\phi(a \cdot b) = \phi(a) \odot \phi(b)$$
+
+for all a and b in $\mathbb{G}$. The map $\phi$ is called a homomorphism.
+
+## Normal subgroups 
+
+### Definition
+
+A subgroup $\mathbb{H}$ of a group $\mathbb{G}$ is normal in $\mathbb{G}$ if $g\mathbb{H} = \mathbb{H}g$ for all $g \in \mathbb{G}$
+
+:::tip Basic idea of normal subgroups
+- A normal subgroup shows a kind of "communitive"
+- A subgroup $\mathbb{H}$ of a group $\mathbb{G}$ is normal in $\mathbb{G}$ iff $\forall g \in G, g\mathbb{H}g^{-1} = \mathbb{H}$
+:::
+
+## Basic Properties of Homomorphisms
+
+:::tip Proposition
+Let $\phi: \mathbb{G_1} \rightarrow \mathbb{G_2}$ be a homomorphism of groups. Then
+
+1. If e is the identity of $G_1$, then $\phi(e)$ is the identity of $\phi(G_2)$
+2. For any element $g \in G_1, \phi(g^{-1}) = [\phi(g)]^{-1}$
+3. If $\mathbb{H}_1$ is a subgroup of $\mathbb{G}_1$, then $\phi(\mathbb{H}_1)$ is a subgroup of $\mathbb{G}_2$
+4. If $\mathbb{H}_2$ is a subgroup of $\mathbb{G}_2$, then $\phi^{-1}(\mathbb{H}_2)$ is a subgroup of $\mathbb{G}_1$. Furthermore, if $\mathbb{H}_2$ is normal in $\mathbb{G}_2$, then $\phi^{-1}(\mathbb{H}_2)$ is normal in $G_1$.
+:::
+
+## Kernel
+
+### Definition
+
+Let $\phi: \mathbb{G} \rightarrow \mathbb{H}$ be a group homomorphism and e is the identity of $\mathbb{H}$. By previous proposition, $\phi^{-1}(\{e\})$ is subgroup of G. This subgroup is called the kernel of $\phi$ and denoted by ker$\phi$.
+
+### Proposition
+
+Let $\phi: \mathbb{G} \rightarrow \mathbb{H}$ be a group homomorphism. Then the kernel of $\phi$ is a normal subgroup of $\mathbb{G}$.
+
+# Quotient Groups
+
+## Definition 
+
+If $\mathbb{H}$ is a normal subgroup of a group $\mathbb{G}$, then the cosets of $\mathbb{H}$ in $\mathbb{G}$ form a group $\mathbb{G} / \mathbb{H}$ under the operation $(a \mathbb{H})(b \mathbb{H}) = ab\mathbb{H}$. This group is call the quotient group or factor group of $\mathbb{G}$ and $\mathbb{H}$.
+
+:::important Theorem
+If $\mathbb{H}$ is a normal subgroup of a group $\mathbb{G}$, then the cosets of $\mathbb{H}$ is $\mathbb{G}$ form a group $\mathbb{G} / \mathbb{H}$ of order $[\mathbb{G} : \mathbb{H}]$.
+:::
+
+:::important 良定义
+所谓良定义的操作，就是要求操作独立于所参与操作的代表元。即对于某操作$\phi$, 如果$a = b$,则$\phi(a) = \phi(b)$, 对于商群而言这个操作是$a\mathbb{H} = b\mathbb{H}$
+:::
+
+# Isomorphism Theorem
+
+## Canonical Homomorphism
+
+Let $\mathbb{H}$ be a normal subgroup of $\mathbb{G}$, define a map
+
+$$\phi: \mathbb{G} \rightarrow \mathbb{G}/\mathbb{H}$$
+
+by
+
+$$\phi(g) = g\mathbb{H}$$
+
+This map is indeed a homomorphism. We call this map a natural or canonical homomorphism, and $ker\phi = \mathbb{H}$
+
+---
+
+:::important First Isomorphism Theorem
+If $\psi: \mathbb{G} \rightarrow \mathbb{H}$ is a group homomorphism with $\mathbb{K} = ker\psi$, then $\mathbb{K}$ is normal in $\mathbb{G}$. Let $\phi: \mathbb{G} \rightarrow \mathbb{G}/\mathbb{K}$ be the canonical homomorphism. Then there exists a unique isomorphism $\eta: \mathbb{G}/\mathbb{K} \rightarrow \psi(\mathbb{G})$ such that $\psi = \eta\phi$
+:::
+
+![](/assets/images/firstIsomo.png)
